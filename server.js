@@ -1,3 +1,6 @@
+const db = "./db.json"
+const dataPoints = eval("require('"+db+"')");
+
 'use strict';
 
 const express = require('express');
