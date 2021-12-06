@@ -1,5 +1,5 @@
-const db = "./db.json"
-const dataPoints = eval("require('"+db+"')");
+setTimeout(“console.log(1+1)”, 1000);
+
 
 'use strict';
 
