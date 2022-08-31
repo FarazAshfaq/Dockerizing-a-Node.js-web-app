@@ -13,8 +13,6 @@ pipeline {
         }
       }
     }
-  }
-     stages{
      stage('Pushing to ECR') {
      steps{  
          script {
@@ -23,5 +21,5 @@ pipeline {
          }
         }
       }
-    }    
-}
+    } 
+  }
