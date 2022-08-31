@@ -1,20 +1,24 @@
 {
-  "name": "docker_web_app",
+  "name": "dockerizing-a-node.js-web-app",
   "version": "1.0.0",
-  "description": "Node.js on Docker",
-  "main": "index.js",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {},
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/FarazAshfaq"
+    "url": "git+https://github.com/FarazAshfaq/Dockerizing-a-Node.js-web-app.git"
   },
-  "keywords": [
-    "node",
-    "js",
-    "docker"
-  ],
-  "author": "Muhammad Faraz Ashfaq",
-  "license": "ISC"
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FarazAshfaq/Dockerizing-a-Node.js-web-app/issues"
+  },
+  "homepage": "https://github.com/FarazAshfaq/Dockerizing-a-Node.js-web-app#readme"
 }
