@@ -1,7 +1,8 @@
 pipeline {
     agent any
         // Building Docker images
-    stages('Building image') {
+       stages {
+       stage(('Building image') {
       steps{
         script {
           dockerImage = docker.build registry
