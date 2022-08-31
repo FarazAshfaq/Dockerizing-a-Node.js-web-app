@@ -1,10 +1,11 @@
 pipeline {
     agent any
     environment {
-        registry = "258888227013.dkr.ecr.us-east-1.amazonaws.com/express"
+        registry = "acct_id.dkr.ecr.us-east-2.amazonaws.com/your_ecr_repo"
     }
 
     // Building Docker images
+    stages{
     stage('Building image') {
       steps{
         script {
