@@ -14,7 +14,10 @@ pipeline {
       }
     }
   }
-        stage('Pushing to ECR') {
+    
+        // Uploading Docker images into AWS ECR
+     stages{
+     stage('Pushing to ECR') {
      steps{  
          script {
                 sh 'aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 258888227013.dkr.ecr.us-east-1.amazonaws.com'
