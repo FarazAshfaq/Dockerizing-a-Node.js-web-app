@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        registry = "acct_id.dkr.ecr.us-east-2.amazonaws.com/your_ecr_repo"
+        registry = "258888227013.dkr.ecr.us-east-1.amazonaws.com/express"
     }
 
     // Building Docker images
@@ -13,5 +13,13 @@ pipeline {
         }
       }
     }
-}
+  }
+        stage('Pushing to ECR') {
+     steps{  
+         script {
+                sh 'aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 258888227013.dkr.ecr.us-east-1.amazonaws.com'
+                sh 'docker push 258888227013.dkr.ecr.us-east-1.amazonaws.com/express:latest'
+         }
+        }
+      }
 }
